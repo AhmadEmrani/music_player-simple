@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content ="width=device-width , initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <script src="https://kit.fontawesome.com/dd9925c23e.js" crossorigin="anonymous"></script>
+    <title>AE_music_player</title>
+</head>
+<body>
+<div class="container_music_player">
+    <div class="music_player">
+        <nav class="nav_in_music_player">
+            <div class="circle">
+                <i class="fa-solid fa-angle-left"></i>
+            </div>
+            <div class="circle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+        <img src="img/homayoon_shajarian.jpg" class="song_img">
+        <h1>yek nafas arezouye to</h1>
+        <p>homayoon shajarian</p>
+
+        <audio  id="song">
+            <source src="music/yek_nafas_arezoye_to.mp3" type="audio/mpeg">
+        </audio>
+        <input type="range" name="" id="progress_music" value="0">
+
+        <div class="controls">
+            <div><i class="fa-solid fa-backward"></i></div>
+            <div onclick="playpause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+            <div><i class="fa-solid fa-forward"></i></div>
+        </div>
+        <script src="jsfile.js"></script>
+    </div>
+</div>
+</body>
+</html>
